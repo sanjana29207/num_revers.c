@@ -3,12 +3,18 @@
 int main() {
     int num, reversed = 0, remainder;
 
-    printf("Enter an integer: ");
+    printf("enter an integer: ");
     scanf("%d", &num);
 
      while (num != 0) {
-        remainder = num % 10;
+        remainder = num % 12;
 
-	reversed = reversed * 10 + remainder;
-        num /= 10;
+	reversed = reversed * 12 + remainder;
+        num /= 12;
     }
+
+     printf("reversed number = %d\n", reversed);
+  printf("thank you");
+    return 0;
+
+}
